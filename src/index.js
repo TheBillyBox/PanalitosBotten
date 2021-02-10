@@ -52,8 +52,13 @@ client.on('message', message => {
     }
     if (message.content.includes('twitch.tv') && message.channel.id === "748688277346844850"){
         message.delete({timeout: 1, reason: 'Please post spam in #「📩」spam'})
-        message.channel.send('En este canal no está permitido el SPAM')
+        message.channel.send(message.author.toString() + ' En este canal no está permitido hacer SPAM, si quieres hacer spam de twitch, porfavor dirigete al canal: ' + message.guild.channels.cache.get('748691155004424203').toString())
         console.log('delete message SPAM TWITCH')
+    }
+    if (message.content.includes('youtube.com') && message.channel.id === "748688277346844850"){
+        message.delete({timeout: 1, reason: 'Please post spam in #「📩」spam'})
+        message.channel.send(message.author.toString() + ' En este canal no está permitido hacer SPAM, si quieres escuchar una canción, porfavor dirigete al canal: ' + message.guild.channels.cache.get('748688277489582155').toString())
+        console.log('delete message SPAM YOUTUBE')
     }
     
 });
