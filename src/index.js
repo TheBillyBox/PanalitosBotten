@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+﻿const Discord = require("discord.js");
 const config = require("./config.json")
 const client = new Discord.Client();
 
@@ -32,22 +32,22 @@ client.on('message', message => {
     }
     if (message.content === '!javiten' && message.channel.id === '748691155004424203'){
         message.delete({timeout: 1, reason: 'GAY'})
-        message.channel.send('@everyone Tobalito esta en directo en twitch!! https://twitch.tv/javiten51')
+        message.channel.send('@everyone Javiten51 esta en directo en twitch!! https://twitch.tv/javiten51')
         console.log('Javiten directo')
     }
     if (message.content === '!frutyy' && message.channel.id === '748691155004424203'){
         message.delete({timeout: 1, reason: 'GAY'})
-        message.channel.send('@everyone Tobalito esta en directo en twitch!! https://twitch.tv/fruttyy_')
+        message.channel.send('@everyone Frutyy esta en directo en twitch!! https://twitch.tv/fruttyy_')
         console.log('Frutty directo')
     }
     if (message.content === '!albita' && message.channel.id === '748691155004424203'){
         message.delete({timeout: 1, reason: 'GAY'})
-        message.channel.send('@everyone Tobalito esta en directo en twitch!! https://twitch.tv/akalbuchi')
+        message.channel.send('@everyone Albita esta en directo en twitch!! https://twitch.tv/akalbuchi')
         console.log('Albita directo')
     }
     if (message.content === '!pablo' && message.channel.id === '748691155004424203'){
         message.delete({timeout: 1, reason: 'GAY'})
-        message.channel.send('@everyone Tobalito esta en directo en twitch!! https://twitch.tv/soled_')
+        message.channel.send('@everyone Pablo esta en directo en twitch!! https://twitch.tv/s0led_')
         console.log('Pablo directo')
     }
     if (message.content.includes('twitch.tv') && message.channel.id === "748688277346844850"){
