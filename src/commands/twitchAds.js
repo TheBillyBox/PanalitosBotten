@@ -35,6 +35,11 @@ async function twitchAds (msg) {
             msg.channel.send('@everyone Pablo esta en directo en twitch!! https://twitch.tv/s0led_')
             console.log('Pablo directo')
         }
+	if (allowedChannelsIds.includes(msg.channel.id) && msg.content.includes('!nuria')){
+            msg.delete({timeout: 5, reason: 'Lo pone el bot no te preocupes'})
+            msg.channel.send('@everyone Nuria esta en directo en twitch!! https://www.twitch.tv/eleriars')
+            console.log('Pablo directo')
+        }
 
     } catch (e) {
         console.log (e)

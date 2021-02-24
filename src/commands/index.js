@@ -1,4 +1,4 @@
-const invitation = require('./invitation')
+﻿const invitation = require('./invitation')
 const twitchAds = require('./twitchAds')
 const antiSPAM = require('./antiSPAM')
 
@@ -35,6 +35,9 @@ function runCommands(client) {
             await twitchAds(msg)
         }
         if (msg.content.includes('!pablo')){
+            await twitchAds(msg)
+        }
+	if (msg.content.includes('!nuria')){
             await twitchAds(msg)
         }
     })
